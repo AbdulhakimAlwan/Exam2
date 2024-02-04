@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+<body>
+  
+<nav class="navbar d-flex flex-column justify-content-center align-items-center" id="navbar">
+  <div class="navbar-toggle-container">
+      <div class="navbar-toggle" id="navbarToggle">&#9776;</div>
+  </div>
+  <div class="navbar-nav" id="navbarNav">
+    <ul>
+      <li id="nowPlaying">Now Playing</li>
+      <li id="popular">Popular</li>
+      <li id="topRated">Top Rated</li>
+      <li id="trending">Trending</li>
+      <li id="upcoming">Upcoming</li>
+      <li id="contact">Contact Us</li>
+    </ul>
+    <div class="social-icons d-flex justify-content-between mt-4">
+      <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="icon"><i class="fas fa-globe"></i></a>
+    </div>
+    <p class="copyright">© 2024 All Rights Reserved 
+      <br/>| Created By <span class="creator">NoOne</span></p>
+  </div>
+  
+</nav>
+
+<div class="search-container">
+  <label for="searchInput" class="search-label"></label>
+  <input type="text" id="searchInput" placeholder="Type a Movie Name">
+</div>
+
+<div class="movies-container" id="moviesContainer">
+  </div>
+  
+<section id="contact" class="container text-white py-5">
+  <h2>Contact US</h2>
+    <form id="userForm" class="row mt-3">
+      <div class="col-md-4">
+        <div class="form-group">
+          <input type="text" required="" id="name" placeholder="Name" class="form-control mt-4">
+          <label for="name"></label>
+        </div>
+          <div class="form-group">
+            <input type="email" required="" id="email" placeholder="Email" class="form-control mt-4">
+            <label for="email"></label>
+          </div>
+        <div class="form-group">
+            <input type="number" required="" id="phone" placeholder="Phone" class="form-control mt-4">
+          <label for="phone"></label>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <input type="number" required="" id="age" placeholder="Age" class="form-control mt-4">
+          <label for="age"></label>
+        </div>
+        <div class="form-group position-relative">
+          <input type="password" required="" id="password" placeholder="Password" class="form-control mt-4">
+          <label for="password"></label>
+        </div>
+        <div class="form-group">
+          <input type="password" required="" id="repassword" placeholder="Re-Password" class="form-control mt-4">
+          <label for="repassword"></label>
+        </div>
+      </div>
+      <div class="col-md-12 mt-4 text-center">
+        <button type="submit" class="form-btn rounded-2 mb-3 animate__animated">Submit</button>
+      </div>
+    </form>
+</section>
+
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
+
+
+
